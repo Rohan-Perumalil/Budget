@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">Student Budgeting Application</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/allbudget">Past budgets</a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <form class="d-flex input-group w-auto">
+                    <a href="/src/login/test.html" class="btn btn-info" role="button">My Account</a>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    <form class="form-horizontal,card-header h5" action="expensesave" method="post">
+        <div class="bg-dark">
+            <div class="row justify-content-center">
+                <div class="card w-75 mb-3">
+                    <h5 class="card-header h5">Income</h5>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="income1" class="control-label col-sm-2">Parents monthly contribution:</label>
+                            <input type="text" class="control-label col-sm-2" id="income1" name="PARENT_CONTR"
+                                   ,value="0.0" , placeholder="income", name="income.parent_contr">
+                        </div>
+                        <div class="form-group">
+                            <label for="income2" class="control-label col-sm-2">Your monthly wages:</label>
+                            <input type="text" class="control-label col-sm-2" id="income2" name="SALARY_MONTHLY" ,
+                                   value="0.0" ,placeholder="income2" name="income.salary_monthly>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-75 mb-3">
+                    <h5 class="card-header h5">Expense</h5>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Choose Month
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" name="current_month>
+
+                            <li><a class="dropdown-item" href="#">JAN</a></li>
+                            <li><a class="dropdown-item" href="#">FEB</a></li>
+                            <li><a class="dropdown-item" href="#">MAR</a></li>
+                            <li><a class="dropdown-item" href="#">APR</a></li>
+                            <li><a class="dropdown-item" href="#">MAY</a></li>
+                            <li><a class="dropdown-item" href="#">JUN</a></li>
+                            <li><a class="dropdown-item" href="#">JUL</a></li>
+                            <li><a class="dropdown-item" href="#">AUG</a></li>
+                            <li><a class="dropdown-item" href="#">SEP</a></li>
+                            <li><a class="dropdown-item" href="#">OCT</a></li>
+                            <li><a class="dropdown-item" href="#">NOV</a></li>
+                            <li><a class="dropdown-item" href="#">DEC</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="expense1" class="control-label col-sm-2">Eating out/entertainment:</label>
+                            <input type="text" class="control-label col-sm-2" id="expense1" name="FOOD_EXPENSE"
+                                   ,value="0.0" , placeholder="expense" name="food_expense">
+                        </div>
+                        <div class="form-group">
+                            <label for="expense2" class="control-label col-sm-2">Monthly school expense:</label>
+                            <input type="text" class="control-label col-sm-2" id="expense2" name="SCHOOL_EXPENSE" ,
+                                   value="0.0" ,placeholder="expense" name="food_expense">
+                        </div>
+                        <div class="form-group">
+                            <label for="expense3" class="control-label col-sm-2">Monthly gas expense:</label>
+                            <input type="text" class="control-label col-sm-2" id="expense3" name="GAS" , value="0.0"
+                                   ,placeholder="expense"  name="gas">
+                        </div>
+                        <div class="form-group">
+                            <label for="expense4" class="control-label col-sm-2">Monthly misc. expense:</label>
+                            <input type="text" class="control-label col-sm-2" id="expense4" name="MISC_EXPENSE" ,
+                                   value="0.0" ,placeholder="expense" name="misc_expense">
+                            <input type="hidden" class="control-label col-sm-2"  name="userid" ,placeholder="userid">
+                        </div>
+                        <div>
+                        <form class="d-flex input-group w-auto">
+                            <a  class="btn btn-info"type="submit" value="Submit">Calculate Budget</a>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </form>
+</html>

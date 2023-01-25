@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href=
+            "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">Student Budgeting Application</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/allbudget">Past budgets</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div>
+            <form class="d-flex input-group w-auto">
+                <a href="/src/login/test.html" class="btn btn-info" role="button">My Account</a>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+</header>
+
+<div class="row justify-content-center">
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Month-Year</th>
+            <th scope="col">Budget status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="table-dark">
+        <td>1</td>
+        <td>Dec-2022</td>
+        <td class="bg-danger">Over Budget</td>
+        </tr>
+        <tr class="table-dark">
+            <td>2</td>
+            <td>Nov-2022</td>
+            <td class="bg-danger">Over Budget</td>
+        </tr>
+        <tr class="table-dark">
+            <td>3</td>
+            <td>Oct-2022</td>
+            <td class="bg-success">In Budget</td>
+        </tr>
+         <tr class="table-dark">
+            <td>4</td>
+            <td>Sep-2022</td>
+            <td class="bg-success">Under Budget</td>
+        </tr>
+        </tbody>
+    </table>
+    <input type="hidden" class="control-label col-sm-2"  name="userid" ,placeholder="userid">
+
+</div>
+
+
+</html>
